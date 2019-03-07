@@ -1,5 +1,21 @@
 h1 {
-  font-size: 4rem;
+  font-size: 6rem;
   text-align: center;
   font-weight: bold;
+}
+
+.navigation {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  margin: 40px auto 40px auto;
+}
+
+.navigation p {
+  font-size: 2rem;
+  color: black;
+}
+
+.navigation a {
+  text-decoration: none;
 }
