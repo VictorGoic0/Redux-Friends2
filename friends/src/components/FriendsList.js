@@ -10,9 +10,13 @@ class FriendsList extends React.Component {
 
   render() {
     return (
-      <h1>Friends List</h1>
+      this.props.friends.map(friend => <Friend key={friend.id} />)
     )
   }
 }
 
-export default connect(null, { getFriends })(FriendsList)
+const mapStateToProps = state => ({
+  friends: state.friends
+})
+
+export default connect(mapStateToProps, { getFriends })(FriendsList)
